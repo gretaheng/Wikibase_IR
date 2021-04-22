@@ -1,0 +1,5 @@
+SELECT DISTINCT ?PropertyLabel where {
+  wd:Q46020055 ?p ?statement .
+  ?Property wikibase:claim ?p.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+} 
